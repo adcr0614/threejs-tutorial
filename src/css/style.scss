@@ -1,0 +1,151 @@
+/*!
+ * Theme Name: 静的サイトパッケージ
+ * Theme URI: https://
+ * Description: 静的サイト専用のベーステーマ
+ * Author: 5ive Inc.
+ * Url: https://5ive.jp/
+ * Version: 3.4
+ */
+
+/* アセット関連
+--------------------------------------------------*/
+@import 'assets/normalize';
+@import 'assets/mixin';
+@import 'assets/setting';
+@import 'assets/base';
+@import 'assets/font';
+@import 'assets/wordpress';
+
+/* Swiper
+--------------------------------------------------*/
+.swiper {
+	width: 800px;
+	height: 600px;
+}
+.sp .swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	background-color: #efefef;
+}
+
+.swiper-slide img {
+	width: 100%;
+	height: auto;
+}
+
+/* Base
+--------------------------------------------------*/
+body {
+	background-color: #ffffff;
+}
+
+header {
+	padding: 15px;
+	background-color: #cccccc;
+}
+
+header .gnav_list li {
+	margin-left: 30px;
+}
+header .gnav_list li:first-child {
+	margin-left: 0;
+}
+
+.page_title {
+	font-size: 24px;
+}
+
+.sec_title {
+	margin: 2em 0 1em 0;
+	font-size: 18px;
+}
+
+.container1 {
+	width: 800px;
+	margin: 0 auto;
+}
+.sp .container1 {
+	width: 100%;
+	padding: 0 15px;
+}
+
+.arrow_top {
+	@include setArrow('top', 18, 1, 1, #666666);
+}
+
+.arrow_bottom {
+	@include setArrow('bottom', 18, 1, 1, #666666);
+}
+.arrow_bottom.open {
+	@include setArrow('top', 18, 1, 1, #666666);
+}
+
+.arrow_left {
+	@include setArrow('left', 18, 1, 1, #666666);
+}
+
+.arrow_right {
+	@include setArrow('right', 18, 1, 1, #666666);
+}
+
+.container1 a {
+	text-decoration: underline;
+}
+.container1 a:hover {
+	@include lightenColor(#cc0000);
+}
+
+.tblr_center {
+	height: 300px;
+	border: 1px solid #cccccc;
+	@include setTblrCenter();
+}
+
+.tb_center {
+	height: 300px;
+	border: 1px solid #cccccc;
+	@include setTbCenter();
+}
+
+
+/* Top Page
+--------------------------------------------------*/
+.top_page {
+
+}
+
+
+
+/* Top Page
+--------------------------------------------------*/
+.about_page .parallax_container {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+}
+
+.about_page .parallax_container img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Footer
+--------------------------------------------------*/
+footer {
+	margin-top: 60px;
+	padding: 30px 0;
+	background-color: #cccccc;
+}
+
+footer .footer_container {
+	text-align: center;
+}
+
+footer .footer_container .copyright {
+	font-size: 10px;
+}

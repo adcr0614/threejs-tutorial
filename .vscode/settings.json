@@ -1,0 +1,46 @@
+{
+	"workbench.colorTheme": "Atom One Dark",
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.editor.highlightModifiedTabs": true,
+	"editor.fontFamily": "Source Han Code JP",
+	"editor.fontWeight": 400,
+	"editor.fontSize": 14,
+	"editor.fontLigatures": true,
+	"editor.tabSize": 2,
+	"editor.cursorBlinking": "smooth",
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.hover.enabled": false,
+	"telemetry.enableTelemetry": false,
+	"files.exclude": {
+		// エクスプローラーから非表示にするファイル
+		"**/*.map": true,
+		"**/node_modules": true,
+		"**/.vscode": true
+	},
+	"search.exclude": {
+		// 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+		"**/tmp": true,
+		"**/*.map": true,
+		"**/node_modules": true,
+		"**/.vscode": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.singleQuote": true,
+	"prettier.useTabs": true,
+	"prettier.printWidth": 360,
+	"git.ignoreLimitWarning": true,
+	"editor.guides.indentation": true
+}

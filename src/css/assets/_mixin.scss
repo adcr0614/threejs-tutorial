@@ -1,0 +1,88 @@
+/* 指定された色より指定比率で明るくする
+--------------------------------------------------*/
+@mixin lightenColor($color, $percent: 20%) {
+	color: $color;
+	&:hover,
+	&:active,
+	&:focus {
+		color: lighten($color, $percent);
+	}
+}
+
+/* 透明度
+--------------------------------------------------*/
+@mixin opacity($opacity) {
+	opacity: $opacity;
+}
+
+/* グラデーション
+--------------------------------------------------*/
+@mixin gradation($topColor, $bottomColor) {
+	background: mix($topColor, $bottomColor, 50%); //開始色と終了色の中間の色を背景色に指定
+	background: linear-gradient($topColor, $bottomColor);
+}
+
+/* くの字矢印
+--------------------------------------------------*/
+@mixin arrow($direction, $width, $bold, $color: #000000) {
+	height: #{$width}px;
+	width: #{$width}px;
+	border-color: $color;
+	border-style: solid;
+	border-width: 0 #{$bold}px #{$bold}px 0;
+	@if ($direction == 'left') {
+		transform: rotate(135deg);
+	} @else if ($direction == 'top') {
+		transform: rotate(225deg);
+	} @else if ($direction == 'right') {
+		transform: rotate(-45deg);
+	} @else if ($direction == 'bottom') {
+		transform: rotate(45deg);
+	}
+}
+
+@mixin setArrow($direction, $width: 10, $bold: 1, $top: 0, $color: #000000) {
+	position: relative;
+	height: $width * 1.414 + px;
+	padding-left: $width + px;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		@if ($direction == 'top') {
+			top: $width / 2 + px;
+			left: $width / 4 + px;
+		} @else if ($direction == 'bottom') {
+			top: 0px;
+			left: $width / 4 + px;
+		} @else if ($direction == 'left') {
+			top: $width / 4 + px;
+			left: $width / 4 + px;
+		} @else if ($direction == 'right') {
+			top: $width / 4 + px;
+			left: -$width / 2 + px;
+		} @else {
+			left: 0;
+		}
+		@include arrow($direction, $width, $bold, $color);
+	}
+	&.align_right:before {
+		left: 100%;
+	}
+}
+
+/* 天地左右中央配置
+--------------------------------------------------*/
+@mixin setTblrCenter() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 天地中央配置
+--------------------------------------------------*/
+@mixin setTbCenter() {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}

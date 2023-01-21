@@ -1,0 +1,42 @@
+{
+	"name": "webpack5",
+	"version": "1.1.1",
+	"private": true,
+	"scripts": {
+		"develop": "webpack serve --host local-ip",
+		"launch": "webpack --watch"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.15.8",
+		"@babel/preset-env": "^7.15.8",
+		"babel-loader": "^8.2.3",
+		"copy-webpack-plugin": "^9.0.1",
+		"css-loader": "^6.5.0",
+		"imagemin-gifsicle": "^7.0.0",
+		"imagemin-mozjpeg": "^9.0.0",
+		"imagemin-pngquant": "^9.0.2",
+		"imagemin-svgo": "^10.0.0",
+		"imagemin-webpack-plugin": "^2.4.2",
+		"mini-css-extract-plugin": "^2.4.3",
+		"npm-check-updates": "^11.8.5",
+		"sass": "^1.43.4",
+		"sass-loader": "^12.3.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.60.0",
+		"webpack-cli": "^4.9.1",
+		"webpack-dev-server": "^4.7.4"
+	},
+	"dependencies": {
+		"@barba/core": "^2.9.7",
+		"@barba/css": "^2.1.15",
+		"@barba/prefetch": "^2.1.10",
+		"gsap": "^3.8.0",
+		"jquery": "^3.6.0",
+		"js-cookie": "^3.0.1",
+		"swiper": "^7.2.0"
+	},
+	"volta": {
+		"node": "16.13.0",
+		"npm": "8.1.0"
+	}
+}

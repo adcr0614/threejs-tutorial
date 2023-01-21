@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Light");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+
+
+/* AppleSystem (San Francisco) */
+@font-face {
+  font-family: 'AppleSystem';
+  src: local('-apple-system'),
+       local('BlinkMacSystemFont');
+}
+
+
+/* MySansSerif */
+@font-face {
+  font-family: 'MySansSerif';
+  font-weight: 400;
+  src: local('HelveticaNeue'),
+       local('Helvetica Neue'),
+       local('Helvetica'),
+       local('Arial');
+}
+@font-face {
+  font-family: 'MySansSerif';
+  font-weight: 700;
+  src: local('HelveticaNeueBold'),
+       local('HelveticaNeue-Bold'),
+       local('Helvetica Neue Bold'),
+       local('HelveticaBold'),
+       local('Helvetica-Bold'),
+       local('Helvetica Bold'),
+       local('Arial Bold');
+}
+@font-face {
+  font-family: 'MySansSerif';
+  font-weight: 900;
+  src: local('HelveticaNeueBlack'),
+       local('HelveticaNeue-Black'),
+       local('Helvetica Neue Black'),
+       local('HelveticaBlack'),
+       local('Helvetica-Black'),
+       local('Helvetica Black'),
+       local('Arial Black');
+}
